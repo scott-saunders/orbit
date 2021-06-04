@@ -1,0 +1,66 @@
+LOCUS       pIntegration_kan                  1958 bp ds-DNA     circular     12-APR-2021
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     rep_origin      598..984
+                     /label="R6K gamma replication origin"
+                     /ApEinfo_revcolor=#d6b295
+                     /ApEinfo_fwdcolor=#d6b295
+     misc_feature    complement(996..1041)
+                     /label="FRT"
+                     /ApEinfo_revcolor=#7ea7d8
+                     /ApEinfo_fwdcolor=#7ea7d8
+     misc_feature    1042..1061
+                     /label="Spacer"
+                     /ApEinfo_revcolor=#7ea7d8
+                     /ApEinfo_fwdcolor=#7ea7d8
+     misc_feature    1062..1109
+                     /label="bxb1_attP"
+                     /ApEinfo_revcolor=#7ea7d8
+                     /ApEinfo_fwdcolor=#7ea7d8
+     misc_feature    1110..1129
+                     /label="Spacer"
+                     /ApEinfo_revcolor=#7ea7d8
+                     /ApEinfo_fwdcolor=#7ea7d8
+     misc_feature    complement(1130..1177)
+                     /label="FRT"
+                     /ApEinfo_revcolor=#84b0dc
+                     /ApEinfo_fwdcolor=#84b0dc
+     CDS             join(1538..1958,1..374)
+                     /label="kanamycin resistance"
+                     /ApEinfo_revcolor=#ff9ccd
+                     /ApEinfo_fwdcolor=#ff9ccd
+ORIGIN
+        1 tcgagcgagc acgtactcgg atggaagccg gtcttgtcga tcaggatgat ctggacgaag
+       61 agcatcaggg gctcgcgcca gccgaactgt tcgccaggct caaggcgcgc atgcccgacg
+      121 gcgaggatct cgtcgtgacc catggcgatg cctgcttgcc gaatatcatg gtggaaaatg
+      181 gccgcttttc tggattcatc gactgtggcc ggctgggtgt ggcggaccgc tatcaggaca
+      241 tagcgttggc tacccgtgat attgctgaag agcttggcgg cgaatgggct gaccgcttcc
+      301 tcgtgcttta cggtatcgcc gctcccgatt cgcagcgcat cgccttctat cgccttcttg
+      361 acgagttctt ctgagcggga ctctggggtt cgaaatgacc gaccaagcga cgcccaacct
+      421 gccatcacga gatttcgatt ccaccgccgc cttctatgaa aggttgggct tcggaatcgt
+      481 tttccgggac gccggctgga tgatcctcca gcgcggggat ctcatgctgg agttcttcgc
+      541 ccaccccagc ttcaaaagcg ctctaaggag gatattcata tggaccatgg ctaattccca
+      601 tgtcagccgt taagtgttcc tgtgtcactg aaaattgctt tgagaggctc taagggcttc
+      661 tcagtgcgtt acatccctgg cttgttgtcc acaaccgtta aaccttaaaa gctttaaaag
+      721 ccttatatat tctttttttt cttataaaac ttaaaacctt agaggctatt taagttgctg
+      781 atttatatta attttattgt tcaaacatga gagcttagta cgtgaaacat gagagcttag
+      841 tacgttagcc atgagagctt agtacgttag ccatgagggt ttagttcgtt aaacatgaga
+      901 gcttagtacg ttaaacatga gagcttagta cgtgaaacat gagagcttag tacgtactat
+      961 caacaggttg aactgcggat cttgcggccg caaaagaagt tcctatactt tctagagaat
+     1021 aggaacttcg gaataggaac tattacacgt cttgagcgat tggtttgtct ggtcaaccac
+     1081 cgcggtctca gtggtgtacg gtacaaaccg tgtaggctgg agctgcttcg aagttcctat
+     1141 actttctaga gaataggaac ttcggaatag gaacttcaag atcccctcac gctgccgcaa
+     1201 gcactcaggg cgcaagggct gctaaaggaa gcggaacacg tagaaagcca gtccgcagaa
+     1261 acggtgctga ccccggatga atgtcagcta ctgggctatc tggacaaggg aaaacgcaag
+     1321 cgcaaagaga aagcaggtag cttgcagtgg gcttacatgg cgatagctag actgggcggt
+     1381 tttatggaca gcaagcgaac cggaattgcc agctggggcg ccctctggta aggttgggaa
+     1441 gccctgcaaa gtaaactgga tggctttctt gccgccaagg atctgatggc gcaggggatc
+     1501 aagatctgat caagagacag gatgaggatc gtttcgcatg attgaacaag atggattgca
+     1561 cgcaggttct ccggccgctt gggtggagag gctattcggc tatgactggg cacaacagac
+     1621 aatcggctgc tctgatgccg ccgtgttccg gctgtcagcg caggggcgcc cggttctttt
+     1681 tgtcaagacc gacctgtccg gtgccctgaa tgaactgcag gacgaggcag cgcggctatc
+     1741 gtggctggcc acgacgggcg ttccttgcgc agctgtgctc gacgttgtca ctgaagcggg
+     1801 aagggactgg ctgctattgg gcgaagtgcc ggggcaggat ctcctgtcat ctcaccttgc
+     1861 tcctgccgag aaagtatcca tcatggctga tgcaatgcgg cggctgcata cgcttgatcc
+     1921 ggctacctgc ccattcgacc accaagcgaa acatcgca
+//
