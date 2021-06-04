@@ -1,0 +1,8 @@
+#Ignore various code garbage.
+*.pyc
+*.ipynb_checkpoints*
+**/.ipynb_checkpoints/
+*pycache*
+
+#Ignore files generated when installing package
+data/.DS_Store
