@@ -6,3 +6,4 @@
 
 #Ignore files generated when installing package
 data/.DS_Store
+*.DS_Store
