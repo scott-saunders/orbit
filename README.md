@@ -16,7 +16,7 @@ The primary issue with this flavor of genetics, is that unlike traditional rever
 
 ORBIT solves this problem by using a **targeting oligo** that not only contains homology arms, but also a site called **attB**. This is an attachment site that will recombine with the corresponding **attP** site in the presence of the integrase Bxb-1. By putting attP on a non-replicating plasmid, Bxb-1 will insert the plasmid into the newly formed attB locus specified by the targeting oligo. This effectively means that one can specify a mutation with an oligo, but select for recombinants using the antibiotic resistance from the plasmid. The amazing part about this two step process, is that it can be completed in a single co-electroporation with the oligo and the plasmid, making it very convenient.
 
-![](orbit_overview.png)
+![](figures/orbit_overview.png)
 
 ## Execution
 
@@ -48,7 +48,7 @@ Fully annotated genbank files are available in the `/plasmids` folder.
 
 The targeting oligo has three parts - the upstream homology arm, the downstream homology arm, and the attB site in between. The attB site is 38 bp, and the minimum recommended homology length is 52 bp, which gives a 90 nucleotide (nt) oligo or longer. These oligos can ordered directly from IDT or Sigma and do not require any modifications or special purifications beyond desalting. These oligos can essentially be diluted in water and used as-is, making it very convenient.
 
-For me, oligos 90 or 100 nt are available from IDT and cost \\$32 or 55. Oligos 90 - 120 nt are available from Sigma and cost \\$18-24. In general, the longer the homology arms, the more efficient ORBIT will be, so I have recently been using 120 nt oligos from Sigma, although IDT oligos of the same length (i.e. both 90 nt) tend to be a bit more efficient.
+For me, oligos 90 or 100 nt are available from IDT and cost \$32 or 55. Oligos 90 - 120 nt are available from Sigma and cost \$18-24. In general, the longer the homology arms, the more efficient ORBIT will be, so I have recently been using 120 nt oligos from Sigma, although IDT oligos of the same length (i.e. both 90 nt) tend to be a bit more efficient.
 
 The targeting oligo should target the lagging strand, and when taking this into account and the possible +/- direction of the attB site thing's quickly become complicated. Therefore I wrote a simple panel app that will let you input genomic coordinates (e.g. from ecocyc) and give you a targeting oligo that specifies that deletion.
 

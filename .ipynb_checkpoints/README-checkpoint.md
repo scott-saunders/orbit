@@ -16,7 +16,7 @@ The primary issue with this flavor of genetics, is that unlike traditional rever
 
 ORBIT solves this problem by using a **targeting oligo** that not only contains homology arms, but also a site called **attB**. This is an attachment site that will recombine with the corresponding **attP** site in the presence of the integrase Bxb-1. By putting attP on a non-replicating plasmid, Bxb-1 will insert the plasmid into the newly formed attB locus specified by the targeting oligo. This effectively means that one can specify a mutation with an oligo, but select for recombinants using the antibiotic resistance from the plasmid. The amazing part about this two step process, is that it can be completed in a single co-electroporation with the oligo and the plasmid, making it very convenient.
 
-![](orbit_overview.png)
+![](figures/orbit_overview.png)
 
 ## Execution
 
