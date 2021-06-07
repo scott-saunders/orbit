@@ -34,7 +34,7 @@ Once you have these components, you need to 1) induce the oligo recombineering g
 
 The ORBIT helper plasmid has two separate inducible modules that perform the two conceptual steps of ORBIT. 
 
-First, there is the oligo recombineering module, that includes a single stranded DNA annealing protein (aka RecT) and a mismatch repair suppression protein (dominant negative mutation of MutL - E32K). Temporarily suppressing mismatch repair enables much higher efficiency, and avoids the issues of using mismatch repair mutants that accumulate mutations. This module is induced with xylS, which responds to m-toluic acid. This is inducer cheap and easy to order from [sigma](https://www.sigmaaldrich.com/catalog/product/aldrich/t36609?lang=en&region=US) is soluble in ethanol.
+First, there is the oligo recombineering module, that includes a single stranded DNA annealing protein (aka RecT) and a mismatch repair suppression protein (dominant negative mutation of MutL - E32K). Temporarily suppressing mismatch repair enables much higher efficiency, and avoids the issues of using mismatch repair mutants that accumulate mutations. This module is induced with xylS, which responds to m-toluic acid. This inducer is cheap and easy to order from [sigma](https://www.sigmaaldrich.com/catalog/product/aldrich/t36609?lang=en&region=US) and is soluble in ethanol.
 
 Second, there is the Bxb-1 integrase that catalyzes the integration of the non-replicating plasmid into the attB site. This gene is simply arabinose induced.
 
@@ -50,7 +50,7 @@ The targeting oligo has three parts - the upstream homology arm, the downstream 
 
 For me, oligos 90 or 100 nt are available from IDT and cost \$32 or 55. Oligos 90 - 120 nt are available from Sigma and cost \$18-24. In general, the longer the homology arms, the more efficient ORBIT will be, so I have recently been using 120 nt oligos from Sigma, although IDT oligos of the same length (i.e. both 90 nt) tend to be a bit more efficient.
 
-The targeting oligo should target the lagging strand, and when taking this into account and the possible +/- direction of the attB site thing's quickly become complicated. Therefore I wrote a simple panel app that will let you input genomic coordinates (e.g. from ecocyc) and give you a targeting oligo that specifies that deletion. You can run this app locally with python or you can run it in the cloud with google colab.
+The targeting oligo should target the lagging strand, and when taking this into account and the possible +/- direction of the attB site things quickly become complicated. Therefore I wrote a simple panel app that will let you input genomic coordinates (e.g. from ecocyc) and give you a targeting oligo that specifies that deletion. You can run this app locally with python or you can run it in the cloud with google colab.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/scott-saunders/orbit/blob/main/targeting_oligo_design_app/ORBIT_targeting_oligo_app_gcolab.ipynb)
 
@@ -62,7 +62,7 @@ See `/targeting_oligo_design_app` for details.
 
 The final piece of ORBIT is the non-replicating or integrating plasmid. This plasmid contains the **attP** site (48 bp) that Bxb-1 recognizes and integrates into the new genomic attB site. For deletions, it doesn't really matter what is on this plasmid, because most of the plasmid backbone can be excised using the classic FLP recombinase (e.g. pCP20).
 
-However, this integrating plasmid can also be used to insert constructs onto the genome. This is particularly useful for transcriptional reporters, so there is a deriviative of the integrating plasmids that contains a library cloning site flanked by transcriptional terminators. In this case, the entire plasmid backbone, except for the desired construct can be excised with FLP.
+However, this integrating plasmid can also be used to insert constructs onto the genome. This is particularly useful for transcriptional reporters, so there is a derivative of the integrating plasmids that contains a library cloning site flanked by transcriptional terminators. In this case, the entire plasmid backbone, except for the desired construct can be excised with FLP.
 
 In any case, the minimal possible scar is the attL, FRT, and attR sites, which leaves about 160 bp. Clean deletions could be made with a second oligo recombineering step to remove this site, and other strategies may also work in the future.
 
