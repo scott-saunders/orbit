@@ -50,7 +50,9 @@ The targeting oligo has three parts - the upstream homology arm, the downstream 
 
 For me, oligos 90 or 100 nt are available from IDT and cost \$32 or 55. Oligos 90 - 120 nt are available from Sigma and cost \$18-24. In general, the longer the homology arms, the more efficient ORBIT will be, so I have recently been using 120 nt oligos from Sigma, although IDT oligos of the same length (i.e. both 90 nt) tend to be a bit more efficient.
 
-The targeting oligo should target the lagging strand, and when taking this into account and the possible +/- direction of the attB site thing's quickly become complicated. Therefore I wrote a simple panel app that will let you input genomic coordinates (e.g. from ecocyc) and give you a targeting oligo that specifies that deletion.
+The targeting oligo should target the lagging strand, and when taking this into account and the possible +/- direction of the attB site thing's quickly become complicated. Therefore I wrote a simple panel app that will let you input genomic coordinates (e.g. from ecocyc) and give you a targeting oligo that specifies that deletion. You can run this app locally with python or you can run it in the cloud with google colab.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/scott-saunders/orbit/blob/main/targeting_oligo_design_app/ORBIT_targeting_oligo_app_gcolab.ipynb)
 
 See `/targeting_oligo_design_app` for details.
 
